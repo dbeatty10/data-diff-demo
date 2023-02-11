@@ -1,0 +1,13 @@
+diffle_shop:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      schema: dev
+      path: 'diffle_shop.duckdb'
+      threads: 24
+    prod:
+      type: duckdb
+      schema: prod
+      path: 'diffle_shop.duckdb'
+      threads: 24
