@@ -1,0 +1,15 @@
+name: 'diffle_shop'
+config-version: 2
+version: '1.0.0'
+require-dbt-version: [">=1.3.0", "<2.0.0"]
+profile: 'diffle_shop'
+
+vars:
+  # configuration for data-diff tool
+  data_diff:
+    prod_database: main
+    prod_schema: prod
+
+models:
+  diffle_shop:
+    materialized: table
