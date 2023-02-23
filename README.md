@@ -71,8 +71,9 @@ Diffs Complete!
 To run without using the `--dbt` flag above, you can compare the same two models with the following command:
 
 ```shell
-data-diff 'duckdb://main@/Users/daveconnors/dev/demos/data-diff-demo/diffle_shop.duckdb' prod.simple_model dev.simple_model -k id -c color
+data-diff 'duckdb://main@./diffle_shop.duckdb' prod.simple_model dev.simple_model -k id -c color
 ```
+
 Here, we first specify the database connection string, then each table name. We use flags to specify how data-diff should compare these tables:
 
 - `-k` : sets the key column used to compare the tables
