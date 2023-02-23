@@ -68,7 +68,7 @@ color: 1
 Diffs Complete!
 ```
 
-To run without using the `--dbt` flag above, you can compare the same to models with the following command:
+To run without using the `--dbt` flag above, you can compare the same two models with the following command:
 
 ```shell
 data-diff 'duckdb://main@/Users/daveconnors/dev/demos/data-diff-demo/diffle_shop.duckdb' prod.simple_model dev.simple_model -k id -c color
