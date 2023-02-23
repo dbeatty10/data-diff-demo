@@ -86,6 +86,13 @@ Example output:
 + 1, black
 ```
 
+## Check exit code
+
+I'd expect the following to be something other than `0` when a difference is found (i.e. a non-zero exit code):
+```shell
+echo $?
+```
+
 ## Debug mode
 
 The following will show a full stack trace in the case of exceptions:
