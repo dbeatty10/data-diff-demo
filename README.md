@@ -68,6 +68,23 @@ color: 1
 Diffs Complete!
 ```
 
+To run without using the `--dbt` flag above, you can compare the same to models with the following command:
+
+```shell
+data-diff 'duckdb://main@/Users/daveconnors/dev/demos/data-diff-demo/diffle_shop.duckdb' prod.simple_model dev.simple_model -k id -c color
+```
+Here, we first specify the database connection string, then each table name. We use flags to specify how data-diff should compare these tables:
+
+- `-k` : sets the key column used to compare the tables
+- `-c` : an additional, non-key column to diff 
+
+Example output:
+
+```diff
+- 1, orange
++ 1, black
+```
+
 ## Debug mode
 
 The following will show a full stack trace in the case of exceptions:
