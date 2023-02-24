@@ -5,3 +5,7 @@ models:
     columns:
       - name: id
         tags: ['primary-key']
+  - name: simple_model_2
+    columns:
+      - name: id
+        tags: ['primary-key']
