@@ -50,22 +50,10 @@ data-diff --dbt --dbt-profiles-dir .
 ```
 
 Example output:
-```
+```diff
 Found 1 successful model runs from the last dbt command.
-main.dev.simple_model <> main.prod.simple_model 
-
-| Rows Added    | Rows Removed
-------------------------------------------------------------
-| 0             | 0
-------------------------------------------------------------
-
-Updated Rows: 1
-Unchanged Rows: 1
-
-Values Updated:
-color: 1
-
-Diffs Complete!
+- 1, black
++ 1, orange
 ```
 
 To run without using the `--dbt` flag above, you can compare the same two models with the following command:
@@ -85,6 +73,12 @@ Example output:
 - 1, orange
 + 1, black
 ```
+
+## Alternative output formats
+
+There are two other output modes enabled by the following flags:
+- `--json`
+- `--stats`
 
 ## Check exit code
 
