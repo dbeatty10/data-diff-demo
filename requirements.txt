@@ -196,7 +196,7 @@ six==1.16.0
     #   minimal-snowplow-tracker
     #   prance
     #   python-dateutil
-sqeleton @ git+https://github.com/dbeatty10/sqeleton.git@53f804aba1597b26fb0753a321b024bba22f2692
+sqeleton @ git+https://github.com/dbeatty10/sqeleton.git@d75cb4b59a906ac2c465f47713eebd6d7b2d3dbb
     # via
     #   -r requirements.in
     #   data-diff
