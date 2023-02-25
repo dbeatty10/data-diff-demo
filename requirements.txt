@@ -37,7 +37,7 @@ configobj==5.0.8
     # via
     #   cli-helpers
     #   duckcli
-data-diff @ git+https://github.com/dbeatty10/data-diff.git@64ab5b17532d277b32ba2cff3a4ea9f1957ab0a2
+data-diff @ git+https://github.com/dbeatty10/data-diff.git@c132655bc60e88ae46a4bb9e36fb154281d60cd4
     # via -r requirements.in
 datamodel-code-generator==0.17.1
     # via dbt-artifacts-parser
