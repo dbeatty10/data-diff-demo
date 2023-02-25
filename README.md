@@ -46,7 +46,7 @@ dbt run -s simple_model
 ## Usage
 
 ```shell
-data-diff --dbt --dbt-profiles-dir .
+data-diff --dbt
 ```
 
 Example output:
@@ -91,7 +91,7 @@ echo $?
 
 The following will show a full stack trace in the case of exceptions:
 ```shell
-data-diff --dbt --dbt-profiles-dir . --debug
+data-diff --dbt --debug
 ```
 
 ## Wrap up
