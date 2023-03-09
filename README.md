@@ -35,12 +35,12 @@ source env/bin/activate
 
 Establish the baseline production table:
 ```shell
-dbt run -s simple_model --target prod
+dbt run -s simple_model --target prod --profiles-dir .
 ```
 
 Simulate a change to the table during development:
 ```
-dbt run -s simple_model
+dbt run -s simple_model --profiles-dir .
 ```
 
 ## Usage
